@@ -334,8 +334,8 @@ class Ecmwf():
             "48_h_lsp" : []
         }
 
-        lat = np.arange(self.__round_coordinates(bottom, grid_step), self.__round_coordinates(top, grid_step) + grid_step, grid_step)
-        lon = np.arange(self.__round_coordinates(left, grid_step), self.__round_coordinates(right, grid_step) + grid_step, grid_step)
+        lat = np.arange(Grid.round_coordinates(bottom, grid_step), Grid.round_coordinates(top, grid_step) + grid_step, grid_step)
+        lon = np.arange(Grid.round_coordinates(left, grid_step), Grid.round_coordinates(right, grid_step) + grid_step, grid_step)
         date_range = [date_start + timedelta(days=x) for x in range(0, days)]
         # iterate over dates
         for date in tqdm(date_range):
