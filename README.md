@@ -1,4 +1,6 @@
-# DDI Module
+# CubicA
+
+## The Agriculture Advisory App
 
 ## Recommenders module
 
