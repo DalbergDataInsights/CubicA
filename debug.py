@@ -10,7 +10,7 @@ cf = os.getcwd()
 from modules.viamo import connection
 
 
-con = connection.Connection(username='dsementsov', password='Assign17')
+con = connection.Connection(username='', password='')
 
 con.refresh_leafs()
 
